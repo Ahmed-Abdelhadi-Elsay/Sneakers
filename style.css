@@ -1,0 +1,316 @@
+body html {
+    font-family: "Ubuntu", sans-serif;
+    overflow: hidden;
+}
+html p{
+    font-size: 19px;
+}
+:root {
+    --orang-hov: #fb923c;
+    --dark-opacity: #4B5563;
+}
+.navbar .navbar-toggler {
+    color: var(--orang-hov);
+    font-size: 25px;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.btn button{
+    padding: .7rem 3.2rem;
+    border: none;
+    background-color: var(--orang-hov);
+    border-radius:6px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 500;
+    transition: 0.4s ease;
+}
+.btn button:hover {
+    background-color: #ff7300;
+}
+/* header satrt */
+.navbar {
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / .1), 0 1px 2px -1px rgb(0 0 0 / .1);;
+}
+.navbar .nav-link {
+    color: var(--dark-opacity);
+    transition: 0.4s ease;
+    font-weight: 500;
+    font-size: 19px;
+}
+.contect .shop,
+.contect .log-in {
+    color: var(--orang-hov);
+    transition: 0.4s ease;
+}
+.navbar .nav-link:hover,
+.contect .shop:hover,
+.contect .log-in:hover {
+    color: #f56e00;
+}
+/* home start */
+.home-cont {
+    height: 90vh;
+}
+.pragraph-home {
+    width: 40%;
+}
+.pragraph-home h2 {
+    font-size: 52px;
+    font-weight: 700;
+}
+/* home End */
+/* title */
+.title {
+    text-align: center;
+}
+.title h3 {
+    font-size: 4rem;
+    font-weight: 600;
+    position: relative;
+    display: inline-block;
+    padding-bottom: .5rem;
+}
+.title h3::before {
+    display: block;
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 100%;
+    background-color: var(--orang-hov);
+    bottom: 0;
+    left: 0;
+}
+/* start popular */
+.img-box {
+    width: 100%;
+    text-align: end;
+}
+.img-box a svg {
+    font-size: 1.7rem;
+    color: var(--dark-opacity);
+}
+.photo-box {
+    width: 100%; 
+    height: 50%; 
+    padding: 1rem;
+    transition: .4s ease;
+}
+.heart-box {
+    transition: .4s ease;
+}
+.photo-box:hover,
+.heart-box:hover {
+    transform: scale(1.1);
+}
+.hr-box {
+    color: #f56e00; 
+}
+.col-boxes {
+    box-shadow: 0px 0px 2px 1px rgba(88, 88, 88, 0.274);
+}
+#icon-shopping {
+    font-size: 1.5rem;
+    color: #fb923c;
+    border: 1px solid #fb923c; 
+    border-radius: 50%;
+    padding: .6rem;
+    cursor: pointer;
+    transition: .4s ease;
+}
+#icon-shopping:hover {
+    background-color: #fb923c;
+    color: #fff;
+}
+/* End popular */
+
+/* footer start */
+#foot {
+    margin-top: 2rem;
+    height: 35vh;
+    background-color: #000000d2;
+    color: #fff;
+}
+#foot a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 400;
+    padding-top: 0.5rem;
+    cursor: pointer;
+    transition: 0.4s ease;
+}
+#foot a:hover{
+    color: var(--orang-hov);
+}
+#foot .row .col {
+    display: flex;
+    flex-direction: column;
+}
+#foot .row .col h2 {
+    font-size: 45px;
+    font-weight: 700;
+    padding-top: 1rem;
+    cursor: pointer;
+}
+#foot .row .col h3 {
+    display: block;
+    font-size: 25px;
+    font-weight: 500;
+    padding-top: 2rem;
+}
+
+/* footer End */
+/* header and */
+
+
+/* about Html start*/
+.pragrph-abou1 {
+    font-size: 150px;
+    font-weight: 700; 
+    margin-top: 7rem;
+    color: var(--dark-opacity);
+}
+.pragrph-abou2 {
+    font-size: 150px;
+    font-weight: 700; 
+}
+.pragrph-abou2 span {
+    color: var(--orang-hov);
+}
+
+/* about Html end*/
+.row-contact {
+    padding: 7rem 0;
+}
+.col-contact1 {
+    padding: 2rem;
+    box-shadow: 0px 0px 3px 0px rgba(88, 88, 88, 0.274);
+}
+.col-contact1 input {
+    margin-bottom: 2rem;
+    width: 100%;
+    border: none;
+    box-shadow: 0px 0px 2px 1px rgba(88, 88, 88, 0.274);
+    padding: 0.5rem;
+    outline: none;
+}
+/* contact start */
+@media (max-width:1200px){
+    .pragrph-abou1{
+        margin-top: 5px;
+    }
+}
+@media (max-width:990px){
+    .navbar .container {
+        max-width: 100%;
+    }
+    .pragrph-abou1,
+    .pragrph-abou2{
+        font-size: 115px;
+    }
+    .row-contact {
+        padding: 3rem 0;
+    }
+    .col-contact2 {
+        text-align: center;
+        overflow: hidden;
+    }
+}
+@media (max-width: 845px) {
+    .collapse {
+        padding-left: 0rem !important;
+        text-align: center;
+    }
+    .contect .shop,
+    .contect .log-in {
+        padding-right: 0.1rem !important;
+        margin-right:10px;
+    }
+    .pragraph-home {
+        width: 100%;
+    }
+    .image-home img{
+        margin: 2rem 0 !important;
+    }
+    .pragraph-home h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    .title h3 {
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+    #poplersnacer .row {
+        padding: 0 2rem;
+    }
+    #foot{
+        height: 40vh;
+    }
+
+}
+@media (max-width: 768px) {
+    .pragrph-abou1,
+    .pragrph-abou2{
+        font-size: 100px;
+    }
+    #our-journey .row .col,
+    #mission .row .col {
+        flex: none;
+        padding: 1rem;
+        text-align: center !important;
+    }
+}
+@media (max-width: 575px) {
+    .col-contact2 {
+        text-align: center;
+        overflow: hidden;
+        height: 210px !important;
+        width: 560px;
+    }
+    .row-contact {
+        margin-right: auto !important;
+    }
+}
+@media (max-width: 561px) {
+    .pragrph-abou1,
+    .pragrph-abou2{
+        font-size: 60px;
+    }
+    .pragrph-abou1 {
+        margin-top: 15rem;
+    }
+    .text-center .col {
+        padding: 0 10px !important;
+    }
+    .about_foot {
+        height: 110vh !important;
+    }
+    .col-contact2 {
+        text-align: center;
+        overflow: hidden;
+        height: 210px !important;
+        width: 510px;
+    }
+}
+@media (max-width: 528px) {
+    #foot .row .col {
+        flex: none;
+    }
+    #foot{
+        height: 75vh;
+    }
+    .col-contact2 {
+        text-align: center !important;
+        overflow: hidden;
+        height: 210px !important;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #foot.contact_foot{
+        height: 100vh;
+        text-align: center;
+    }
+}
